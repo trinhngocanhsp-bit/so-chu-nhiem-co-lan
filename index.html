@@ -20,6 +20,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
+    @media (max-width: 600px) {
+    .modal, .popup, [class*="modal"], [class*="popup"], [class*="dialog"] {
+      max-width: 90% !important;
+      font-size: 13px !important;
+    }
+  }
         :root { --primary: #1e40af; --bg: #f1f5f9; --text-main: #0f172a; --border: #cbd5e1; --font-main: 'Be Vietnam Pro', sans-serif; }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: var(--font-main); -webkit-tap-highlight-color: transparent; }
         body { background-color: var(--bg); color: var(--text-main); line-height: 1.4; padding: 6px; font-size: 13.5px; }
