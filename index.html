@@ -21,11 +21,32 @@
     
     <style>
     @media (max-width: 600px) {
-    .modal, .popup, [class*="modal"], [class*="popup"], [class*="dialog"] {
-      max-width: 90% !important;
-      font-size: 13px !important;
-    }
+  /* Tăng chữ toàn bộ trang web và bảng danh sách */
+  body {
+    font-size: 15px !important;
   }
+  table, th, td {
+    font-size: 14px !important;
+  }
+  button, select, input {
+    font-size: 14px !important;
+  }
+  /* Chỉnh bảng popup Sao kê to rõ, vừa khít màn hình */
+  .auth-card, #detailModal .auth-card {
+    width: 95% !important;
+    max-width: 420px !important;
+    padding: 16px !important;
+  }
+  #detail-modal-title {
+    font-size: 1.15rem !important;
+  }
+  #detail-modal-content {
+    font-size: 0.95rem !important;
+  }
+  #detail-modal-content table {
+    font-size: 14px !important;
+  }
+}
         :root { --primary: #1e40af; --bg: #f1f5f9; --text-main: #0f172a; --border: #cbd5e1; --font-main: 'Be Vietnam Pro', sans-serif; }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: var(--font-main); -webkit-tap-highlight-color: transparent; }
         body { background-color: var(--bg); color: var(--text-main); line-height: 1.4; padding: 6px; font-size: 13.5px; }
